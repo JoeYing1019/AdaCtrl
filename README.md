@@ -26,7 +26,10 @@
 ---
 
 ## 📖 Introduction
-
+<div align="center">
+  <img src="img/case.png" alt="AdaCtrl Teaser" width="90%">
+  <br>
+</div>
 Large Language Models (LLMs) often suffer from a **computational mismatch**: they tend to "overthink" simple problems (wasting inference budget) or "underthink" complex ones (sacrificing accuracy). Current methods either uniformly minimize tokens or rely on brittle, fine-grained prompt constraints.
 
 To address this, we introduce **AdaCtrl**, a novel framework that empowers models to:
@@ -35,11 +38,6 @@ To address this, we introduce **AdaCtrl**, a novel framework that empowers model
 
 AdaCtrl effectively balances performance and computational efficiency, leading to performance improvements while dynamically reducing response lengths by up to **90%**.
 
-<div align="center">
-  <img src="img/case.png" alt="AdaCtrl Teaser" width="90%">
-  <br>
-  <em><b>Figure 1:</b> Given the same problem, AdaCtrl supports three reasoning modes. <b>[Easy]</b> prioritizes efficiency for simple queries; <b>[Hard]</b> delivers extensive reasoning for complex tasks; and <b>Adaptive</b> mode dynamically allocates the budget based on difficulty.</em>
-</div>
 
 ---
 
