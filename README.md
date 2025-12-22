@@ -14,8 +14,8 @@
   <a href="https://github.com/volcengine/verl">
     <img src="https://img.shields.io/badge/Framework-Verl-blue?style=for-the-badge" alt="Framework">
   </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
+  <a href="https://www.apache.org/licenses/">
+    <img src="https://img.shields.io/badge/License-Apache_2.0-green.svg?style=for-the-badge" alt="License">
   </a>
   <a href="https://www.python.org/">
     <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
