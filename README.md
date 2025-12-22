@@ -7,10 +7,19 @@
   <p>
     <b>A Unified Framework for Dynamic Reasoning Budget Allocation and Explicit User Control</b>
   </p>
-  [![Paper](https://img.shields.io/badge/paper-arXiv-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.18822)
-  [![Framework](https://img.shields.io/badge/Framework-Verl-blue?style=for-the-badge)](https://github.com/volcengine/verl)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-  [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
+  <a href="https://arxiv.org/abs/2505.18822">
+    <img src="https://img.shields.io/badge/paper-arXiv-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="Paper">
+  </a>
+  <a href="https://github.com/volcengine/verl">
+    <img src="https://img.shields.io/badge/Framework-Verl-blue?style=for-the-badge" alt="Framework">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  </a>
 
 </div>
 
@@ -81,7 +90,6 @@ $$ r(y_i) = r_o(y_i) + \alpha \cdot r_f(y_i) + \beta \cdot r_l(y_i) $$
 Our environment is built on top of [Verl](https://github.com/volcengine/verl).
 
 ```bash
-cd verl
 pip3 install ray[default]
 pip3 install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
 pip3 install flash-attn==2.7.4.post1 --no-build-isolation
@@ -92,7 +100,7 @@ pip3 install -e verl
 
 #### Training
 
-Start ray and run the following scripts to train 7B and 14B models:
+Start ray and run the following scripts to train 7B or 14B models:
 
 ```
 set -e
@@ -102,7 +110,7 @@ export HYDRA_FULL_ERROR=1
 
 NNODES=4
 RUN_NAME=Qwen2.5-7B-Instruct-AdaCtrl
-model=xxx
+model=/../../xxx_7B
 train_path=train.parquet
 test_path=test.parquet
 
